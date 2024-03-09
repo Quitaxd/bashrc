@@ -1,0 +1,2 @@
+# bashrc
+My bash configuration.
