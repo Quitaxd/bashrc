@@ -22,6 +22,8 @@ fi
 
 neofetch
 
+[[ -r "/usr/share/z/z.sh" ]] && source /usr/share/z/z.sh
+
 ###         ###
 
 # install apps and configs.
@@ -51,3 +53,11 @@ elif [ "$THEME" == "gentoo" ]; then
 else
                                 echo "$THEME theme does not exist."
 fi
+
+# path settings.
+
+for pathdir in $PATHDIRS; do
+        if [ -d "$pathdir" ]; then
+            export PATH="$PATH:$pathdir"
+        fi
+done
