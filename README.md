@@ -1,3 +1,5 @@
+[!WARNING] For updates: https://git.quitaxd.online/quitaxd/bashrc
+
 # bashrc
 My bash configuration.
 
